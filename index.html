@@ -14,21 +14,22 @@
         <form action="" method="get" name="keyWord">
             <label for="userInput">Enter Key word</label>
             <input type="text" placeholder="Enter key word here" name="userInput" id="userInput"/>
-            <button type="submit">Submit</button>
+            <button type="submit">Get Dogs</button>
         </form><!-- todo end of keyWord form-->
         <h2>Click for a random dog picture</h2>
         <button type="button" id="retriveBtn">Retrive</button>
         <!-- <form action="" id="random"> -->
             <!-- <label for="random">Click for random dogs</label> -->
             
-        <!-- </form>todo end of random form -->
-<template data-user-template>
-    <div class="card">
-        <div class="header" data-header></div>
-        <div class="body" data-body></div>
-    </div>
-</template>
-
+<div class="dogCards" data-dog-card-container>    <!-- </form>todo end of random form -->
+    <template data-dog-template>
+        <div class="card">
+            <div class="header" data-header></div>
+            <img src="" alt="dog pics" height="250px" width="250px" data-dog-image/>
+            <!-- <div class="body" data-body></div> -->
+        </div>
+    </template>
+</div>
     </main>
     <script type="module" src="./javaScript/index.js"></script>
 </body>
