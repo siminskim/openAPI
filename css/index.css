@@ -2,12 +2,50 @@
     font-family: dogBone ;
     src: url(/KsWelshTerrierHideNRegular-7B0jw.ttf);
 }
-.card {
-    border: solid 1px 
-}
-.header{
+/* .dogCards { */
+/* display: flexbox; */
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px)); */
+    /* border: solid 1px ; */
+    /* gap:.25rem */
+/* } */
+/* .card{ */
+    /* border: 2px solid yellow */
+/* } */
+/* .header{
+    width: 250px;
+    text-align: center;
     background-color: purple;
     color: white;
-    font-size: 4rem;
+    font-size: 1rem;
     font-family:dogbone;
-}
+} */
+ /* div{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid blue
+ } */
+  body{
+    color: white;
+    background-color: black;
+    font-family: dogBone;
+  }
+  h1{
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+ .cardContainer {
+    display: flex;
+  flex-direction: column;
+
+ }
+ .card{
+    display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+ }
