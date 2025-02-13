@@ -6,19 +6,27 @@
     <meta name="Author" content="Michael Siminski"/>
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="stylesheet" href="./css/index.css">
-    <script defer type="module" src="./javaScript/index.js"></script>
+    <script defer src="./javaScript/index.js"></script>
     <title>Puppy Page</title>
 </head>
 <body>
-     <main id="mainContainer">
         <h1>Puppy Pics</h1>
-        <div class="retriveSection">
-            <h2>Click retrive for random dog pictures</h2> 
-            <button type="button" id="retriveBtn">Retrive</button>
+        <div class="randomDog">
+            <h2>Click retrieve for random dog pictures</h2> 
+            <button type="button" id="retrieveBtn">Retrieve</button>
         </div>
-<div class="cardContainer" data-dog-card-container>    <!-- </form>todo end of random form -->
-</div>
-    </main>
-    
+        <!-- section for the template and container for the cards -->
+    <section>
+        <!-- template does not show up in html on load -->
+        <template data-dog-template>
+            <div class="card">
+                <img src="" alt="Dog Image" class="dog-img" />
+                <p class="dog-breed"></p>
+            </div>
+        </template>
+        <!-- container for each card -->
+        <div data-dog-card-container class="dog-container"></div>
+
+    </section>
 </body>
 </html>
