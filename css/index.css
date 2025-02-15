@@ -4,9 +4,10 @@
 }
   body{
     background-color: black;
-    font-family: dogBone;
+    /* font-family: dogBone; */
   }
   h1{
+    font-family: dogBone;
     color: white;
     text-align: center;
   }
@@ -14,8 +15,25 @@
     color: white;
     text-align: center;
   }
+  h3{
+    margin:5px 0px 0px ;
+
+  }
+  p{
+    margin:0px
+  }
   button{
-    width: 150px
+    
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color:white;
+    width: 150px;
+    &:hover{
+      color: white;
+      border: 2px solid #8a8a8a;
+      background-color: black;
+      cursor:pointer
+    }
   }
   .randomDog{
     display: flex;
@@ -44,6 +62,23 @@
 }
 .dog-breed {
   font-size: 16px;
-  font-weight: bold;
   margin-top: 5px;
+}
+@media only screen and (min-width: 768px) {
+  
+  h1{
+    font-size: 6rem;
+  }
+
+h2{
+  font-size: 2rem;
+}
+button{
+  font-size: 1rem;
+}
+.dog-breed{
+  font-size: 2rem;
+}
+
+
 }
